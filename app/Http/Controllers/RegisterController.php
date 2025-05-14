@@ -27,7 +27,7 @@ class RegisterController extends Controller
 
         event(new Registered($user)); //Trigger email verification
         //Auth::login($user);
-        return response()->json(['message'=>'User registered successfully. Please check your email verification.'])
+        return response()->json(['message'=>'User registered successfully. Please check your email verification.']);
         //Return redirect()->route('dashboard');
     }
 }
