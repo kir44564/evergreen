@@ -61,11 +61,12 @@ class ApiController extends Controller
 
     public function destroy($id)
     {
-        $utente = User::find($id);
-        if (!$utente) {
+        $utenti = User::find($id);
+        if (!$utenti) {
             return response()->json(['error' => 'User not found'], 404);
         }
-        $utente->delete();
+        $utenti->delete();
         return response()->json(null, 204);
     }
 }
+//
