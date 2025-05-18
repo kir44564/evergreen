@@ -5,7 +5,8 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
-use Illuiminate\Support\Facades\URL;
+use Illuminate\Support\Facades\URL;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -44,4 +45,6 @@ class AppServiceProvider extends ServiceProvider
     {
         URL::forceScheme('https');
     }
+
+    
 }
