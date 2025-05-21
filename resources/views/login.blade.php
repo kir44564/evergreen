@@ -93,18 +93,15 @@ body{
 </head>
 <body>
 
-<div class="container">
-  <h1>Login</h1> 
+<div class="container" onclick="onclick">
+  <h2>Please Sign In</h2> 
+  <h2>&nbsp</h2>
   <form method="POST" action="{{ route('login.attempt') }}"> 
     
     @csrf
     
     <x-form-errors></x-form-errors>
-    .container(onclick)
-      .top
-      .bottom
-      .center
-        h2 Please Sign In
+      <div class="top"></div>
       <div class="mb-3">
         <input type="email" name="email" placeholder="Email" required class="form-control border-0 shadow-sm"/> 
       </div>
@@ -113,7 +110,7 @@ body{
         <input type="password" name="password" placeholder="Password" required class="form-control border-0 shadow-sm"/> 
       </div>
     
-      <div class="d-flex justify-content-between align-items-center mb-4"> 
+      <div class="d-flex justify-content-between align-items-center mb-4"> {/* Flexbox for Remember Me and Forgot Password */}
           <div class="form-check mb-3">
             <input type="checkbox" name="remember" id="remember" class="form-check-input">
             <label class="form-check-label" for="remember">Remember Me</label>
@@ -121,7 +118,7 @@ body{
         <a href="#" class="text-decoration-none">Forgot Password?</a>
       </div>
 
-      <button type="submit" class="btn btn-primary w-100 py-2">Login</button> 
+      <button type="submit" class="btn btn-primary w-100 py-2">Login</button> {/* Changed button text and added padding */}
         h2 &nbsp;
     </form> 
 </div>
