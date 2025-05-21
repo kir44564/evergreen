@@ -110,7 +110,7 @@ body{
         <input type="password" name="password" placeholder="Password" required class="form-control border-0 shadow-sm"/> 
       </div>
     
-      <div class="d-flex justify-content-between align-items-center mb-4"> {/* Flexbox for Remember Me and Forgot Password */}
+      <div class="d-flex justify-content-between align-items-center mb-4"> 
           <div class="form-check mb-3">
             <input type="checkbox" name="remember" id="remember" class="form-check-input">
             <label class="form-check-label" for="remember">Remember Me</label>
@@ -118,8 +118,8 @@ body{
         <a href="#" class="text-decoration-none">Forgot Password?</a>
       </div>
 
-      <button type="submit" class="btn btn-primary w-100 py-2">Login</button> {/* Changed button text and added padding */}
-        h2 &nbsp;
+      <button type="submit" class="btn btn-primary w-100 py-2">Login</button> 
+      
     </form> 
 </div>
 
